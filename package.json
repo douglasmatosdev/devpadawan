@@ -9,10 +9,13 @@
     "commit": "cz"
   },
   "dependencies": {
+    "gray-matter": "^4.0.2",
     "next": "10.0.7",
     "next-images": "^1.7.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
@@ -22,6 +25,7 @@
     "@typescript-eslint/eslint-plugin": "^4.15.2",
     "@typescript-eslint/parser": "^4.15.2",
     "babel-plugin-inline-react-svg": "^2.0.1",
+    "babel-plugin-styled-components": "^1.12.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
