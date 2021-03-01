@@ -1,7 +1,7 @@
 ---
-title: 'Desliza a cortina em cima do like'
-date: '2020-03-16'
-excerpt: 'Resumo do segundo post'
+title: 'Iniciando projeto com React, Typescript, NextJS e Redux'
+date: '2021-02-28'
+excerpt: 'Uma breve introdução sobre o assunto a ser aboradado'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

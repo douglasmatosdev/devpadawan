@@ -1,7 +1,7 @@
 ---
-title: 'Primeiro post, se inscreve no canal'
-date: '2020-03-16'
-excerpt: 'Resumo do primeiro post'
+title: 'Introdução a redes de computadores'
+date: '2021-02-28'
+excerpt: 'Uma breve introdução sobre o assunto a ser aboradado'
 ---
 
 Primeiro post

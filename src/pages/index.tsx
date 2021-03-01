@@ -127,13 +127,13 @@ export default function Home({ posts }) {
     return (
         <div>
             <GlobalStyle />
-            <Head title="Home - DevSoutinho Site" />
+            <Head title="DevPadawan" />
 
             <header className="headerContainer">
                 <img src="https://github.com/douglasmatosdev.png" />
                 <h1>
-                    DevPadawan's Blog
-        </h1>
+                    DevPadawan
+                </h1>
             </header>
 
             <section className="postsContainer">
