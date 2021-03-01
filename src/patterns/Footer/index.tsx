@@ -7,7 +7,8 @@ interface Props {
 const Footer: React.FC = ({ children }: Props) => {
     return (
         <footer>
-            {children}
+            This is footer
+            {/* {children} */}
         </footer>
     )
 }

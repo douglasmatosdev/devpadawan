@@ -7,7 +7,8 @@ interface Props {
 const Header: React.FC = ({ children }: Props) => {
     return (
         <header>
-            {children}
+            This is header
+            {/* {children} */}
         </header>
     )
 }
