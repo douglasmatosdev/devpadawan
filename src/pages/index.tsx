@@ -1,13 +1,13 @@
-import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
-import { getAllPosts } from '../../scripts/blog/getAllPosts';
+import React from 'react'
+import styled, { createGlobalStyle } from 'styled-components'
+import { getAllPosts } from '../../scripts/blog/getAllPosts'
 
-import Head from '../infra/components/Head';
-// import Typography from '../src/components/foundation/Typography';
-// import Header from '../src/patterns/Header';
-// import Footer from '../src/patterns/Footer';
-// import { loadGetInitialProps } from 'next/dist/next-server/lib/utils';
-// import { getAllPosts } from '../scripts/posts/postsRepository';
+import Head from '../infra/components/Head'
+// import Typography from '../src/components/foundation/Typography'
+// import Header from '../src/patterns/Header'
+// import Footer from '../src/patterns/Footer'
+// import { loadGetInitialProps } from 'next/dist/next-server/lib/utils'
+// import { getAllPosts } from '../scripts/posts/postsRepository'
 
 
 const GlobalStyle = createGlobalStyle`
@@ -82,9 +82,9 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
     }
   }
-`;
+`
 
-// const fontSize = 30;
+// const fontSize = 30
 
 // const Title = styled.h3`
 //   font-size: ${fontSize}px;
@@ -97,13 +97,13 @@ const GlobalStyle = createGlobalStyle`
 //       color: #666;
 //     }
 //   }
-// `;
+// `
 
 
 // const PostCardWrapper = styled.article`
 //   border: 1px solid orange;
 //   padding: ${({theme}) => theme.spacing.big}px;
-// `;
+// `
 
 // function Title({ children }) {
 //   return <h3>{children}</h3>
@@ -153,12 +153,12 @@ export default function Home({ posts }) {
             </section>
             {/* <Footer /> */}
         </div>
-    );
+    )
 }
 
 
 export async function getStaticProps() {
-    const posts = getAllPosts();
+    const posts = getAllPosts()
 
     return {
         props: {
