@@ -3,9 +3,8 @@ import styled from 'styled-components'
 import { getAllPosts } from '../../../scripts/blog/getAllPosts'
 import Navbar from '../../components/Navbar';
 
-const Post: React.FC = ({ post }) => {
+const Post = ({ post }): JSX.Element => {
     if (!post) return null
-    console.log(post[0].content);
 
     return (
         <section>
