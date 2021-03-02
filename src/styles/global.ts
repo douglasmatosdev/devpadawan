@@ -71,5 +71,9 @@ export default createGlobalStyle`
     h1 {
       margin: 0;
     }
+    small {
+        display: inline-block;
+        width: 100%;
+    }
   }
 `
