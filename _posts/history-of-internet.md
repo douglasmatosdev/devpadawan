@@ -1,3 +1,9 @@
+---
+title: 'História da internet'
+date: '2021-03-07'
+excerpt: 'No início da década de 60, durante a guerra fria...'
+---
+
 # HISTÓRIA DA INTERNET
 
 No início da década de 60, durante a guerra fria, período no qual as duas grandes potências Estados Unidos(EUA) e União Soviética(URSS), estavam em disputa de poder, logo, qualquer tecnologia que pudesse demonstrar superioridade era alvo de muito investimento e foi por isso que neste período surgiram as primeiras redes de computadores, com o objetivo de conectar os grandes computadores que eram máquinas valvuladas e que ocupavam um andar inteiro de uma universidade. 
