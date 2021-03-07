@@ -21,8 +21,6 @@ export default function Home({ posts }) {
             <section className="postsContainer">
                 <h1>Posts</h1>
                 {posts.map((post, i) => {
-                    console.log(post);
-                    
                     return (
                         <article key={`${post?.metadata?.title}-${i}`} className="postsContainer__post">
                             <h2>

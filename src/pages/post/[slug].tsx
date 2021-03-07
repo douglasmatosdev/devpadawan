@@ -8,9 +8,6 @@ const Post = ({ post }): JSX.Element => {
     if (!post) return 
     const [{content}] = post
 
-    console.log(typeof content);
-    
-
     return (
         <PostContainer>
             <header>
