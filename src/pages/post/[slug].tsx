@@ -7,6 +7,8 @@ import JSXParser from 'react-jsx-parser'
 const Post = ({ post }): JSX.Element => {
     if (!post) return 
     const [{content}] = post
+    console.log(content);
+    
 
     return (
         <PostContainer>
