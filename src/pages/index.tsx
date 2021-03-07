@@ -6,9 +6,6 @@ import Head from '../infra/components/Head'
 import Navbar from '../components/Navbar'
 
 export default function Home({ posts }) {
-    const [{metadata}] = posts
-    const { title, date, excerpt, slug } = metadata
-
     return (
         <div>
             <Head title="DevPadawan" />
@@ -24,15 +21,17 @@ export default function Home({ posts }) {
             <section className="postsContainer">
                 <h1>Posts</h1>
                 {posts.map((post, i) => {
+                    console.log(post);
+                    
                     return (
-                        <article key={`${title}-${i}`} className="postsContainer__post">
+                        <article key={`${post?.metadata?.title}-${i}`} className="postsContainer__post">
                             <h2>
-                                <Link href={`/post/${slug}`}>
-                                    {title}
+                                <Link href={`/post/${post?.metadata?.slug}`}>
+                                    {post?.metadata?.title}
                                 </Link>
                             </h2>
                             <p>
-                                {excerpt}
+                                {post?.metadata?.excerpt}
                             </p>
                         </article>
                     )
