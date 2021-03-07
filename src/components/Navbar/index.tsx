@@ -9,10 +9,10 @@ const Navbar: React.FC = () => {
                     <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="">Linkedin</a>
+                    <a href="https://www.linkedin.com/in/devdouglasmatos/">Linkedin</a>
                 </li>
                 <li>
-                    <a href="">Github</a>
+                    <a href="https://github.com/douglasmatosdev">Github</a>
                 </li>
             </ul>
         </NavBarStyled>
