@@ -2,20 +2,27 @@ import React from 'react'
 import styled from 'styled-components'
 import { getAllPosts } from '../../../scripts/blog/getAllPosts'
 import Navbar from '../../components/Navbar';
+import JSXParser from 'react-jsx-parser'
 
 const Post = ({ post }): JSX.Element => {
-    if (!post) return null
+    if (!post) return 
+    const [{content}] = post
+
+    console.log(typeof content);
+    
 
     return (
-        <section>
+        <PostContainer>
             <header>
                 <Navbar />
             </header>
 
             <article>
-                {post[0].content}
+                <JSXParser
+                jsx={content}
+                />
             </article>
-        </section>
+        </PostContainer>
     )
 }
 
@@ -32,3 +39,15 @@ export const getServerSideProps = async (pageContext) => {
     }
 }
 export default Post
+
+const PostContainer = styled.section`
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    header {
+        width: 100%;
+    }
+
+`
