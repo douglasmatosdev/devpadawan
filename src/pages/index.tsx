@@ -6,8 +6,6 @@ import Head from '../infra/components/Head'
 import Navbar from '../components/Navbar'
 
 export default function Home({ posts }) {
-    console.log(posts);
-    
     return (
         <div>
             <Head title="DevPadawan" />
