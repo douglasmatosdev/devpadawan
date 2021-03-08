@@ -26,7 +26,7 @@ export default function Home({ posts }) {
                     return (
                         <article key={`${post?.metadata?.title}-${i}`} className="postsContainer__post">
                             <h2>
-                                <Link href={`/post/${post?.metadata?.slug}`}>
+                                <Link href={`/post/${encodeURIComponent(post?.metadata?.slug)}`}>
                                     {post?.metadata?.title}
                                 </Link>
                             </h2>
