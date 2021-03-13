@@ -14,6 +14,9 @@ const Navbar: React.FC = () => {
                 <li>
                     <a href="https://github.com/douglasmatosdev">Github</a>
                 </li>
+                <li>
+                    <a href="https://twitter.com/devdouglasmatos">TWITER</a>
+                </li>
             </ul>
         </NavBarStyled>
     )
@@ -23,12 +26,16 @@ export default Navbar
 
 
 const NavBarStyled = styled.nav`
+
     *,
     ul,
     li {
         margin: 0;
         padding: 0;
         outline: none;
+        a {
+            text-decoration: none;
+        }
     }
     width: 100%;
     height: auto;

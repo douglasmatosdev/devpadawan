@@ -5,21 +5,25 @@ import { getAllPosts } from '../scripts/blog/getAllPosts'
 import Head from '../src/infra/components/Head'
 import Navbar from '../src/components/Navbar'
 
+import { Container } from '../src/styles/pages/Home'
+
 export default function Home({ posts }) {
     return (
-        <div>
+        <Container>
             <Head title="DevPadawan" />
             <Navbar />
             <header className="headerContainer">
-                <img src="https://github.com/douglasmatosdev.png" />
                 <section>
-                    <h1>DevPadawan</h1>
-                    <small>I am studing sharing content</small>
+                    <h2>
+                        <span>I'am</span> <a href="https://www.linkedin.com/in/devdouglasmatos/">Douglas Silva</a>
+                        <span>an Developer Padawan</span>
+
+                    </h2>
+                    <small>This blog contains some of knowledge</small>
                 </section>
             </header>
 
             <section className="postsContainer">
-                <h1>Posts</h1>
                 {posts.map((post, i) => {
                     return (
                         <article key={`${post?.metadata?.title}-${i}`} className="postsContainer__post">
@@ -28,6 +32,7 @@ export default function Home({ posts }) {
                                     {post?.metadata?.title}
                                 </Link>
                             </h2>
+                            <small>Posted in - {post?.metadata?.date}</small>
                             <p>
                                 {post?.metadata?.excerpt}
                             </p>
@@ -35,7 +40,7 @@ export default function Home({ posts }) {
                     )
                 })}
             </section>
-        </div>
+        </Container>
     )
 }
 
@@ -48,4 +53,4 @@ export async function getStaticProps() {
             posts
         }
     }
-} 
+}
