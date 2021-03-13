@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { getAllPosts } from '../../../scripts/blog/getAllPosts'
-import Navbar from '../../components/Navbar';
+import { getAllPosts } from '../../scripts/blog/getAllPosts'
+import Navbar from '../../src/components/Navbar';
 import JSXParser from 'react-jsx-parser'
 
 const Post = ({ post }): JSX.Element => {

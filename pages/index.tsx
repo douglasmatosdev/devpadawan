@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-import { getAllPosts } from '../../scripts/blog/getAllPosts'
+import { getAllPosts } from '../scripts/blog/getAllPosts'
 
-import Head from '../infra/components/Head'
-import Navbar from '../components/Navbar'
+import Head from '../src/infra/components/Head'
+import Navbar from '../src/components/Navbar'
 
 export default function Home({ posts }) {
     return (
