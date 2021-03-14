@@ -4,7 +4,7 @@ import { getAllPosts } from '../../scripts/blog/getAllPosts'
 import Navbar from '../../src/components/Navbar';
 import JSXParser from 'react-jsx-parser'
 
-const Post = ({ post }): JSX.Element => {
+export default function Post({ post }): JSX.Element {
     if (!post) return 
     const [{content}] = post
 
@@ -23,10 +23,9 @@ const Post = ({ post }): JSX.Element => {
     )
 }
 
-export const getServerSideProps = async (pageContext) => {
-    const pageSlug = pageContext.query.slug
+export const getStaticProps = async (context) => {
+    const pageSlug = context.params.slug
     const posts = getAllPosts()
-
     const post = await posts.filter((e, i) => e.metadata.slug == pageSlug)
 
     return {
@@ -35,7 +34,6 @@ export const getServerSideProps = async (pageContext) => {
         }
     }
 }
-export default Post
 
 const PostContainer = styled.section`
     display: flex;
@@ -48,3 +46,15 @@ const PostContainer = styled.section`
     }
 
 `
+
+
+export const getStaticPaths = async () => {
+    const posts = getAllPosts()
+    const paths = posts.map(((e, i) => ({ params: { slug: `${e.metadata.slug}` } })))
+    
+    return {
+        paths: paths,
+        fallback: false
+    }
+}
+
