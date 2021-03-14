@@ -28,8 +28,10 @@ export default function Home({ posts }) {
                     return (
                         <article key={`${post?.metadata?.title}-${i}`} className="postsContainer__post">
                             <h2>
-                                <Link href={`/post/${encodeURIComponent(post?.metadata?.slug)}`}>
-                                    {post?.metadata?.title}
+                                <Link href={`/post/${post?.metadata?.slug}`}>
+                                    <a>
+                                        {post?.metadata?.title}
+                                    </a>
                                 </Link>
                             </h2>
                             <small>Posted in - {post?.metadata?.date}</small>
